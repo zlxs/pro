@@ -1,5 +1,3 @@
-package xinyongfei.sdk.api.common.datasource;
-
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -16,7 +14,7 @@ import javax.sql.DataSource;
 @Configuration
 @ConditionalOnProperty("c3p0.v2.jdbcUrl")
 @MapperScan(sqlSessionFactoryRef = "v2SqlSessionFactory",annotationClass = V2Mapper.class,basePackages = {
-        "xinyongfei.sdk.api.mapper.v2"
+        "sdk.api.mapper.v2"
 })
 public class V2DbConfiguration {
 

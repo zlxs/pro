@@ -1,5 +1,3 @@
-package xinyongfei.sdk.api.common.datasource;
-
 import java.lang.annotation.*;
 
 @Documented

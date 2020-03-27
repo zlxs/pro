@@ -22,7 +22,7 @@ import javax.sql.DataSource;
 @MapperScan(
         sqlSessionFactoryRef = SdkDataSourceConfig.SQL_SESSION_FACTORY_NAME,
         basePackages = {
-                "xinyongfei.sdk.api.mapper.master"
+                "sdk.api.mapper.master"
         },
         //sqlSessionTemplateRef = SdkDataSourceConfig.SQL_SESSION_TEMPLATE_NAME,
         annotationClass = SdkMapper.class

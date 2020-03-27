@@ -1,5 +1,3 @@
-package xinyongfei.sdk.api.common.datasource;
-
 import com.zaxxer.hikari.HikariDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -18,10 +16,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 import javax.sql.DataSource;
 
-/**
- * @Author dongdong
- * @Date 2019-03-28 14:31
- */
+
 @Configuration
 @ConditionalOnProperty("hikari.sdk.jdbc-url")
 @MapperScan(

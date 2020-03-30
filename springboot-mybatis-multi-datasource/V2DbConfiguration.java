@@ -30,7 +30,7 @@ public class V2DbConfiguration {
         SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(v2DataSource());
         sessionFactory.setMapperLocations(applicationContext.getResources("classpath*:mybatis/v2/*.xml"));
-        sessionFactory.setTypeAliasesPackage("xinyongfei.sdk.api.mapper.v2.entities");
+        sessionFactory.setTypeAliasesPackage("sdk.api.mapper.v2.entities");
         org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration(){{
             setMapUnderscoreToCamelCase(true);
         }};

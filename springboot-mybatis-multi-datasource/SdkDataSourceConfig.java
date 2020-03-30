@@ -37,7 +37,7 @@ public class SdkDataSourceConfig {
     @Value("${hikari.sdk.mybatisMapperLocation:classpath*:mybatis/*.xml}")
     private String mapperLocation;
 
-    @Value("${hikari.sdk.mybatisTypeAliases:xinyongfei.sdk.api.entity.master}")
+    @Value("${hikari.sdk.mybatisTypeAliases:sdk.api.entity.master}")
     private String typeAliases;
 
     /**
